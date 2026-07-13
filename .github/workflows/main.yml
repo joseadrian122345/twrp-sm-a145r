@@ -8,10 +8,20 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Checkout device tree
+      - name: Checkout Device Tree
         uses: actions/checkout@v4
 
-      - name: Mostrar archivos
+      - name: Install dependencies
         run: |
-          pwd
-          ls -R
+          sudo apt update
+          sudo apt install -y \
+          git curl python3 unzip zip \
+          bc bison build-essential ccache \
+          flex g++-multilib gcc-multilib \
+          git-core gnupg gperf imagemagick \
+          lib32ncurses5-dev lib32readline-dev \
+          lib32z1-dev liblz4-tool libncurses5 \
+          libsdl1.2-dev libssl-dev libxml2 \
+          libxml2-utils lzop pngcrush rsync \
+          schedtool squashfs-tools xsltproc \
+          zip zlib1g-dev
