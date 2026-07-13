@@ -1,5 +1,5 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_a14m.mk
+    $(LOCAL_DIR)/twrp_a145r.mk
 
 COMMON_LUNCH_CHOICES := \
     twrp_a145r-user \
